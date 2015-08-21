@@ -6,8 +6,4 @@ public class Question2 {
       // commit from master
 	// this is 2nd line from master .
    }	
-	
-
-
-
 }
