@@ -15,9 +15,9 @@ public class TreeTraversal {
 		if (node == null) {
 			return;
 		}
-		inOrderTraversal(node.left);
+		inOrderTraversal(node.getLeft());
 		visit(node);
-		inOrderTraversal(node.right);	
+		inOrderTraversal(node.getRight());	
 	}
 
 	//pre order -- current , left, right i.e. visit current node before children
@@ -26,8 +26,8 @@ public class TreeTraversal {
 			return;
 		}
 		visit(node);
-		preOrderTraversal(node.left);
-		preOrderTraversal(node.right);
+		preOrderTraversal(node.getLeft());
+		preOrderTraversal(node.getRight());
 	}
 
 	//post order -- left, right, current i.e. visit current node after children.
@@ -35,8 +35,8 @@ public class TreeTraversal {
 		if (node == null) {
 			return;
 		}		
-		postOrderTraversal(node.left);
-		postOrderTraversal(node.right);
+		postOrderTraversal(node.getLeft());
+		postOrderTraversal(node.getRight());
 		visit(node);
 	}
 		
