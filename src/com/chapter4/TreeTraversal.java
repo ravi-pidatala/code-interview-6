@@ -1,4 +1,4 @@
-package com.chapter4
+package com.chapter4;
 
 public class TreeTraversal {
    
@@ -11,7 +11,7 @@ public class TreeTraversal {
 	}
 	
 	//inorder -- left, current, right
-	void inOrderTraversal(Node node) {
+	void inOrderTraversal(TreeNode node) {
 		if (node == null) {
 			return;
 		}
@@ -21,7 +21,7 @@ public class TreeTraversal {
 	}
 
 	//pre order -- current , left, right i.e. visit current node before children
-	void preOrderTraversal(Node node) {
+	void preOrderTraversal(TreeNode node) {
 		if (node == null) {
 			return;
 		}
@@ -31,7 +31,7 @@ public class TreeTraversal {
 	}
 
 	//post order -- left, right, current i.e. visit current node after children.
-	void postOrderTraversal(Node node) {
+	void postOrderTraversal(TreeNode node) {
 		if (node == null) {
 			return;
 		}		
@@ -40,7 +40,7 @@ public class TreeTraversal {
 		visit(node);
 	}
 		
-	void visit(Node node) {
+	void visit(TreeNode node) {
 		System.out.print(node + ", ");
 	}
 
