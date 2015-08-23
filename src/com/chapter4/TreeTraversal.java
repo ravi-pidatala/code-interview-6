@@ -3,11 +3,14 @@ package com.chapter4;
 public class TreeTraversal {
    
 	public static void main(String [] args) {
-	   
+		TreeTraversal traversal = new TreeTraversal();
+	   	TreeNode node = TreeUtil.constructTree();
 		
-
-
-
+	   	traversal.inOrderTraversal(node);
+		System.out.println();
+		traversal.preOrderTraversal(node);
+		System.out.println();
+		traversal.postOrderTraversal(node);
 	}
 	
 	//inorder -- left, current, right
