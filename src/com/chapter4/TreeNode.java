@@ -10,7 +10,7 @@ public class TreeNode {
 		return left;
 	}
 	
-	public void setLeft() {
+	public void setLeft(TreeNode left) {
 		this.left = left;
 	}
 
@@ -18,7 +18,7 @@ public class TreeNode {
 		return right;
 	}
 	
-	public void setRight() {
+	public void setRight(TreeNode right) {
 		this.right = right;
 	}
 }
