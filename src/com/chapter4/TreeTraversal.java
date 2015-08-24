@@ -46,5 +46,4 @@ public class TreeTraversal {
 	void visit(TreeNode node) {
 		System.out.print(node + ", ");
 	}
-
 }
